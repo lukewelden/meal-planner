@@ -8,7 +8,7 @@ Welcome to the Meal Planner Web App repository! This simple web app allows you t
 ### Initial app 
 1. My initial thoughts for the web application is to have a simple index.html that contains the title, a brief description of the web app, and a generation button. When the button is clicked it will trigger a JS script which either reveals hidden sections or creates sections for each day of the week. Each section will contain the day, the name of the meal, the ingredients of the meal, cooking instructions,  an image of the meal, and a link to the recipe if it's been sourced externally. 
 
-2. I'm thinkng of creating a meal class which has the following properties.
+2. I'm thinking of creating a meal class which has the following properties.
 - meal name (string)
 - ingredients (array)
 - cooking instructions (array)
@@ -18,7 +18,7 @@ We can then create instances of the meal class for each meal we want to store.
 
 3. Create a function that picks five meals at random, one for each day of the week, and sends them to the index.html sections.
 
-## Future features
+### Future features
 - We could put in some sort of form for the user to fill out to pick what days they want to plan for. For example, they may only want to plan Mon - Thursday because Friday is take out day!
 - Once the app generated the random meals for the week we could put in functionality that lets the user select meals they agree with and then give them the options to regenerate more meals replacing the meals that they have not selected. For example, the app generates: `Monday = Spaghetti, Tuesday = Fish and Chips, Wednesday = Curry, Thursday = Burgers, Friday = Wings.` I like the sound of all those meals bar the curry. I select all the meals bar curry and hit the button again. The app then picks a random meal to replace curry but keeps all the others as is.  
 - We could add functionality that lets end users enter their own meals and store them in the app (We may need to start thinking about linking the app up to a database at this point)
