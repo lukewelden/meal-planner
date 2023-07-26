@@ -19,9 +19,9 @@ We can then create instances of the meal class for each meal we want to store.
 3. Create a function that picks five meals at random, one for each day of the week, and sends them to the index.html sections.
 
 ## Future features
--  We could put in some sort of form for the user to fill out to pick what days they want to plan for. For example, they may only want to plan Mon - Thursday because Friday is take out day!
--  Once the app generated the random meals for the week we could put in functionality that lets the user select meals they agree with and then give them the options to regenerate more meals replacing the meals that they have not selected. For example, the app generates: `Monday = Spaghetti, Tuesday = Fish and Chips, Wednesday = Curry, Thursday = Burgers, Friday = Wings.` I like the sound of all those meals bar the curry. I select all the meals bar curry and hit the button again. The app then picks a random meal to replace curry but keeps all the others as is.  
-4. We could add functionality that lets end users enter their own meals and store them in the app (We may need to start thinking about linking the app up to a database at this point)
+- We could put in some sort of form for the user to fill out to pick what days they want to plan for. For example, they may only want to plan Mon - Thursday because Friday is take out day!
+- Once the app generated the random meals for the week we could put in functionality that lets the user select meals they agree with and then give them the options to regenerate more meals replacing the meals that they have not selected. For example, the app generates: `Monday = Spaghetti, Tuesday = Fish and Chips, Wednesday = Curry, Thursday = Burgers, Friday = Wings.` I like the sound of all those meals bar the curry. I select all the meals bar curry and hit the button again. The app then picks a random meal to replace curry but keeps all the others as is.  
+- We could add functionality that lets end users enter their own meals and store them in the app (We may need to start thinking about linking the app up to a database at this point)
 
 ## Actions
 To build the Meal Planner Web App, follow these actions in order:
@@ -64,8 +64,6 @@ Alternatively, you can manually open the index.html file in your web browser by 
 
 ## Contributing
 We welcome contributions to enhance the Meal Planner Web App. If you have any suggestions, improvements, or bug fixes, please feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
-
-## 
 
 ## License 
 This project is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License) see [LICENSE](./LICENSE) for further details
