@@ -44,7 +44,7 @@ To run the Meal Planner Web App locally, follow these simple steps:
 - Install a code editor of your choice. We recommend Visual Studio Code (VSCode), which offers excellent support for web development.
 - If you want to see live updates to the web app within the text editor check out the many live server extensions within VSCode.  
 
-2.Clone the Repository:
+2. Clone the Repository:
 - Clone this repository to your local machine using the following command in your terminal or command prompt:
 ```bash
 git clone https://github.com/your-username/MealPlannerApp.git
