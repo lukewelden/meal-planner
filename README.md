@@ -27,7 +27,7 @@ We can then create instances of the meal class for each meal we want to store.
 To build the Meal Planner Web App, follow these actions in order:
 _If you'd like to pick up a task feel free to edit the readme and put your name next to the task_
 
-- [ ] Create a boilerplate `index.html`.
+- [x] Create a boilerplate `index.html`.
 - [ ] Set up basic CSS styling.
 - [ ] Create a vanilla JS script.
 - [ ] Create a catalogue of recipes using JavaScript classes.
