@@ -47,3 +47,5 @@ console.log(spagBol.name);
 console.log(spagBol.ingredients);
 console.log(spagBol.instructions);
 console.log(spagBol.srcLink);
+
+export {spagBol}; 
