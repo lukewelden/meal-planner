@@ -26,8 +26,36 @@ body, h1, h2, p, button {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
     display: none;
+
   }
+
+  /* Style for each meal */
+.meal {
+  width: 100%; /* Make each meal take up 50% of the container width */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: cornsilk;
+}
+
+/* Style for the lists container */
+.lists {
+  display: flex;
+  text-align: left;
+}
+
+/* Style for the ingredients list */
+.ingredients {
+  flex: 1; /* Make the ingredients list take up 50% of the meal width */
+}
+
+/* Style for the instructions list */
+.instructions {
+  flex: 1; /* Make the instructions list take up 50% of the meal width */
+}
 
   /* Style the header elements */
   h1 {

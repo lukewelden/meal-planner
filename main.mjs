@@ -11,11 +11,30 @@ const meal = document.createElement("div");
 
 // Function to create the HTML content for each meal
 const createMealDiv = (meal) => {
+    // Generate the list items for ingredients
+    const ingredientsListItems = meal.ingredients.map((ingredient) => `<li>${ingredient}</li>`).join('');
+  
+    // Generate the list items for instructions
+    const instructionsListItems = meal.instructions.map((instruction) => `<li>${instruction}</li>`).join('');
+  
+    // Combine the ingredients list and instructions list into the div
     return `
-      <div>
+      <div class="meal">
         <h2>${meal.name}</h2>
-        <p>Ingredients: ${meal.ingredients.join(', ')}</p>
-        <p>Instructions: ${meal.instructions.join(', ')}</p>
+        <div class="lists">
+          <div class="ingredients">
+            <p>Ingredients:</p>
+            <ul>
+              ${ingredientsListItems}
+            </ul>
+          </div>
+          <div class="instructions">
+            <p>Instructions:</p>
+            <ol>
+              ${instructionsListItems}
+            </ol>
+          </div>
+        </div>
       </div>
     `;
   };
@@ -25,9 +44,6 @@ const mealDivs = randomMealsArray.map((meal) => createMealDiv(meal));
 
 // Join the generated HTML elements and convert to a string
 let mealDivString = mealDivs.join('');
-
-// Remove the commas from the string
-mealDivString = mealDivString.replace(/,/g, '');
 
 // unhides meals section and adds the above html div element 
 let showMealSection = function() {
