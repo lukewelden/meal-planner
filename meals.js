@@ -2,9 +2,9 @@
 class Meals {
     constructor(name, ingredients, instructions, srcLink) {
         this._name = name; // The only property that should be immutable. The other properties may change over time for improved recipes etc. 
-        this.ingredients = ingredients;
-        this.instructions = instructions;
-        this.srcLink = srcLink;    
+        this._ingredients = ingredients;
+        this._instructions = instructions;
+        this._srcLink = srcLink;    
     }
 
     get name(){
@@ -12,27 +12,27 @@ class Meals {
     }
 
     get ingredients(){
-        return this.ingredients;
+        return this._ingredients;
     }
 
     get instructions(){
-        return this.instructions;
+        return this._instructions;
     }
 
     get srcLink(){
-        return this.srcLink;
+        return this._srcLink;
     }
 
     set ingredients(ing){
-        this.ingredients = ing; 
+        this._ingredients = ing; 
     }
 
     set instructions(ins){
-        this.ingredients = ins; 
+        this._instructions = ins; 
     }
 
     set srcLink(link){
-        this.srcLink = link; 
+        this._srcLink = link; 
     }
 }
 
@@ -44,3 +44,6 @@ const spagBol = new Meals(
     )
 
 console.log(spagBol.name);
+console.log(spagBol.ingredients);
+console.log(spagBol.instructions);
+console.log(spagBol.srcLink);
