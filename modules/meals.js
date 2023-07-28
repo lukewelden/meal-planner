@@ -1,6 +1,6 @@
 // Class used to create meals objects
 class Meals {
-    constructor(name, ingredients, instructions, srcLink) {
+    constructor(name, ingredients, instructions) {
         this._name = name; // The only property that should be immutable. The other properties may change over time for improved recipes etc. 
         this._ingredients = ingredients;
         this._instructions = instructions;    
@@ -141,17 +141,33 @@ const mealsData = [
       }
   ];
   
-  // Array to hold the instances
-  const mealsArray = [];
+// Array to hold the instances
+const mealsArray = [];
   
-  // Loop to create instances based on the data
-  for (const mealData of mealsData) {
-    const mealInstance = new Meals(mealData.name, mealData.ingredients, mealData.instructions);
-    mealsArray.push(mealInstance);
-  }
+// Loop to create instances based on the data
+for (const mealData of mealsData) {
+  const mealInstance = new Meals(mealData.name, mealData.ingredients, mealData.instructions);
+  mealsArray.push(mealInstance);
+}
 
-console.log(mealsArray);
+// Function that grabs five random meals from the mealsArray 
+const getRandomMeals = () => { 
+  let randomMeals = []
+  let mealIndexes = new Set(); // Set to store the indexes of selected meals
+
+  while (mealIndexes.size < 5) {
+    let randomNumber = Math.floor(Math.random() * mealsArray.length);
+    
+    // Check if the random number (index) is not in the set
+    if (!mealIndexes.has(randomNumber)) {
+      mealIndexes.add(randomNumber);
+      randomMeals.push(mealsArray[randomNumber]);
+    }
+  }
+  
+  return randomMeals;
+}
   
 // Export the array to be used in other files
-export {mealsArray};
+export { getRandomMeals };
   
