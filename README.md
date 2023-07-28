@@ -29,7 +29,7 @@ _If you'd like to pick up a task feel free to edit the readme and put your name 
 
 - [x] Create a boilerplate `index.html`.
 - [x] Set up basic CSS styling.
-- [ ] Create a vanilla JS script.
+- [x] Create a vanilla JS script.
 - [x] Create a catalogue of recipes using JavaScript classes.
 - [ ] Implement the "Pick Random Recipe" functionality.
 - [ ] Add a weekly meal planner feature.
