@@ -1,13 +1,7 @@
 import { getRandomMeals } from './modules/meals.js'; // importing a list of random meal objects
 
-// Pulls five random meals from the mealsArray in meals.js 
-const randomMealsArray = getRandomMeals();
-
 let genBtn = document.getElementById('gen-button');
 let mealSection = document.getElementById('mealSection');
-
-// creating meal html div element
-const meal = document.createElement("div");
 
 // Function to create the HTML content for each meal
 const createMealDiv = (meal) => {
@@ -39,17 +33,24 @@ const createMealDiv = (meal) => {
     `;
   };
   
-// Loop through randomMealsArray and generate the HTML content for each meal
-const mealDivs = randomMealsArray.map((meal) => createMealDiv(meal)); 
-
-// Join the generated HTML elements and convert to a string
-let mealDivString = mealDivs.join('');
-
-// unhides meals section and adds the above html div element 
-let showMealSection = function() {
+// Function to display the random meals
+const showRandomMeals = () => {
+    // Pulls five random meals from the mealsArray in meals.js 
+    const randomMealsArray = getRandomMeals();
+  
+    // Loop through randomMealsArray and generate the HTML content for each meal
+    const mealDivs = randomMealsArray.map((meal) => createMealDiv(meal)); 
+  
+    // Join the generated HTML elements and convert to a string
+    const mealDivString = mealDivs.join('');
+  
+    // unhides meals section and adds the above html div element 
     mealSection.style.display = 'block';
-    mealSection.appendChild(meal);
-    meal.innerHTML = mealDivString;
-}
-
-genBtn.addEventListener('click', showMealSection); 
+    mealSection.innerHTML = mealDivString;
+  };
+  
+// Initial call to display random meals on page load
+//showRandomMeals();
+  
+// Add click event listener to the button
+genBtn.addEventListener('click', showRandomMeals);
