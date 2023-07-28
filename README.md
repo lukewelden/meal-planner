@@ -28,9 +28,9 @@ To build the Meal Planner Web App, follow these actions in order:
 _If you'd like to pick up a task feel free to edit the readme and put your name next to the task_
 
 - [x] Create a boilerplate `index.html`.
-- [ ] Set up basic CSS styling.
+- [x] Set up basic CSS styling.
 - [ ] Create a vanilla JS script.
-- [ ] Create a catalogue of recipes using JavaScript classes.
+- [x] Create a catalogue of recipes using JavaScript classes.
 - [ ] Implement the "Pick Random Recipe" functionality.
 - [ ] Add a weekly meal planner feature.
 - [ ] Test the app thoroughly and fix any bugs.
